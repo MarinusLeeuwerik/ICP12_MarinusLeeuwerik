@@ -1,6 +1,10 @@
 #include "Programs.h"
+#include "Functions.h"
 #include <malloc.h>
+#include <conio.h>
 #include <Windows.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int programma01(void) // inleiding printf programma 1
 {
@@ -364,5 +368,118 @@ int Week4P2(void)
 
 int Week4P3(void)
 {
+	int r = Randomize(0, 50);
+	int i;
+	
+	for (i = 100; r > 0; i--)
+	{
+		printf("%d",r);
+		if (r % 2 == 0) 
+		{
+			r = r / 2;
+			printf("-> ");
+		}
+		else if (r % 2 != 0 && r != 1)
+		{
+			r = 3 * r + 1;
+			printf("-> ");
+		}
+		else if (r == 1)
+		{
+			printf("\n");
+			system("pause");
+			exit(0);
+		}
+	}
+	return 0;
+}
+
+int Week4P4(void)
+{
+	// input the first argument...
+	int arg1, arg2, arg3, arg4;
+	printf("Enter arg1: ");
+	scanf("%d", &arg1);
+	// ...and the second
+	printf("Enter arg2: ");
+	scanf("%d", &arg2);
+	// ...and the third
+	printf("Enter arg3: ");
+	scanf("%d", &arg3);
+	// ...and the fourth
+	printf("Enter arg4: ");
+	scanf("%d", &arg4);
+	// now decide what to do:
+	if (arg1 > arg2)
+	{
+		printf("Argument 1 is greater than argument 2\n");
+	}
+	else
+	{
+		printf("Argument 1 is not greater than argument 2\n");
+	}
+
+	if (arg1 > (arg3 + arg4) || arg2 > (arg3 + arg4))
+	{
+		printf("Bingo!\n");
+	}
+	else
+	{
+		printf("Jammer!\n");
+	}
+	if ((arg1 + arg2) < (2 * arg3 - arg4))
+	{
+		printf("Hoera!\n");
+	}
+	else
+	{
+		printf("Pech!\n");
+	}
+	if (arg1 > arg2 && arg1 > arg3 && arg1 > arg3 && arg1 > arg4)
+	{
+		printf("Arg1 is t grootste\n");
+	}
+	else if (arg2 > arg3 && arg2 > arg3 && arg2 > arg4)
+	{
+		printf("Arg2 is t grootste\n");
+	}
+	else if (arg3 > arg4)
+	{
+		printf("Arg3 is t grootste\n");
+	}
+	else
+	{
+		printf("Arg4 is t grootste\n");
+	}
+	return 0;
+}
+
+int Week4P5(void)
+{
+
+	int number1, number2, choice;
+	printf("Enter 2 integers: ");
+	scanf("%d %d", &number1, &number2);
+	printf("These 2 number may be ");
+	printf("(1) added, ");
+	printf("(2) subtracted, ");
+	printf("(3) multiplied, ");
+	printf("(4) divided. ");
+	printf("(5) module.");
+	printf("\nPlease make your choice: ");
+	scanf("%d", &choice);
+	switch (choice){
+	case 1: printf("result = %d\n", number1 + number2); break;
+	case 2: printf("result = %d\n", number1 - number2); break;
+	case 3: printf("result = %d\n", number1 * number2); break;
+	case 4: printf("result = %f\n", number1*1.0 / number2); break;
+	case 5: printf("result = %d\n", number1 % number2); break;
+	default: printf("Please enter the right choice....\n");
+	}
+	return 0;
 
 }
+
+
+
+

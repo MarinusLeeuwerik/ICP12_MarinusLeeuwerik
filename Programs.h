@@ -23,6 +23,7 @@ extern int Week3P5(void);
 extern int Week4P1(void);
 extern int Week4P2(void);
 extern int Week4P3(void);
-
+extern int Week4P4(void);
+extern int Week4P5(void);
 
 #endif

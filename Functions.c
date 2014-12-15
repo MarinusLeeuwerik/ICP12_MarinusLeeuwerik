@@ -33,3 +33,35 @@ bool Authorize()
 	}
 	return auth;
 }
+
+int Randomize(int min, int max)
+{
+	static int t = 0;
+	int random;
+
+	if (t == 0)
+	{
+		srand(time(NULL));
+		t = 1;
+	}
+	random = (rand() % (max - min + 1) + min);
+
+	return random;
+}
+
+int Menu()
+{
+	int s;
+
+	printf("================================================================================\n");
+	printf("                                       ICP12                                   \n");
+	printf("                                  Marinus Leeuwerik                             \n");
+	printf("================================================================================\n");
+
+	printf("Kies hieronder de week waar U de opdrachten van wil zien: \n");
+	printf("\tWeek 1\t\t\tWeek 2\n");
+	printf("\tWeek 3\t\t\tWeek 4\n");
+	
+	system("pause");
+	return s;
+}

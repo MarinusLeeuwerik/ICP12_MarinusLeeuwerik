@@ -8,10 +8,15 @@
 
 int main()
 {
-	Week4P2();
+	Menu();
+	Week4P5();
+	//nuclear test facility
+	//Less air resistance
+	//3 hours
+	//the objects arent falling but standing still. 
 	
-
-	/*while (1)
+	/*int prgrm;
+	while (1)
 	{
 		printf("================================================================================\n");
 		printf("                                       ICP12                                   \n");
