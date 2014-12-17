@@ -8,8 +8,8 @@
 
 int main()
 {
-	Menu();
-	Week4P5();
+	//Menu();
+	Week5P3();
 	//nuclear test facility
 	//Less air resistance
 	//3 hours

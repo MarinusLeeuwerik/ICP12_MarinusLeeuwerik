@@ -480,6 +480,40 @@ int Week4P5(void)
 
 }
 
+int Week5P1(void)
+{
+	double l = 0.0;
+	double w = 0.0;
+	double h = 0.0;
 
+	printf("Voer de lengte in: \n");
+	scanf("%lf", &l);
+	printf("\nVoer de breedte in: \n");
+	scanf("%lf", &w);
+	printf("\nVoer de hoogte in: \n");
+	scanf("%lf", &h);
 
+	printf("De oppervlakte van de balk is: %lf\n", SurfaceBeam(l, w, h));
+	
+	printf("De inhoud van de balk is: %lf\n", VolumeBeam(l, w, h));
+
+	return 0;
+}
+
+int Week5P3(void)
+{
+	double l = 0.0;
+	double w = 0.0;
+	double h = 0.0;
+
+	printf("Voer de lengte in: \n");
+	scanf("%lf", &l);
+	printf("\nVoer de breedte in: \n");
+	scanf("%lf", &w);
+	printf("\nVoer de hoogte in: \n");
+	scanf("%lf", &h);
+
+	printf("De inhoud van de piramide is: %lf\n", VolumePiramid(l, w, h));
+	return 0;
+}
 

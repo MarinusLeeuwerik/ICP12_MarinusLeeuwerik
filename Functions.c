@@ -65,3 +65,18 @@ int Menu()
 	system("pause");
 	return s;
 }
+
+double SurfaceBeam(double l, double w, double h) 
+{
+	return ((2 * (l*h)) + (2 * (w*h)) + (2 * (w*l)));
+}
+
+double VolumeBeam(double l, double w, double h)
+{
+	return l*w*h;
+}
+
+double VolumePiramid(double l, double w, double h)
+{
+	return ((1 / 3)*(l*w)*h);
+}
